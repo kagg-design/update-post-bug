@@ -6,7 +6,7 @@ Activate it on clean WP. Plugin creates two tags with slugs `wp_update_post_tag_
 
 Go to `/wpup-test/` page of your site. You will see output like that
 
-wp_get_post_tags() Before wp_update_post()
+    wp_get_post_tags() Before wp_update_post()
 
     array (size=1)
       0 => 
