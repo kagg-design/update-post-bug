@@ -2,7 +2,7 @@
 
 /**
  *
- * Plugin Name: Update Post Bug.
+ * Plugin Name: Update Post Bug
  * Description: wp_update_post() changes the tag of the post.
  * Author: KAGG Design
  * Author URI: https://kagg.eu/en
@@ -53,12 +53,12 @@ function wpup_test_page() {
 
 		$post = get_post( $post_id );
 
-		echo 'wp_get_post_tags() Before wp_update_post()' . "\n";
+		echo 'wp_get_post_tags() Before wp_update_post()';
 		$tags = wp_get_post_tags( $post->ID );
 		var_dump( $tags );
-		echo "\n";
+		echo '<br><br><br>';
 
-		echo 'wp_get_post_tags() After wp_update_post()' . "\n";
+		echo 'wp_get_post_tags() After wp_update_post()';
 		wp_update_post( $post );
 		$tags = wp_get_post_tags( $post->ID );
 		var_dump( $tags );
